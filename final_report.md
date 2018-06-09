@@ -36,11 +36,6 @@ These regions will be targeted with future simulations and once finished will be
 This will thereby improving the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
 
 
-
-
-### Final Report
-[Click here for the full final report.](final_report.md)
-
 ##### include interpolation image and MSE image
 
 You can use the [editor on GitHub](https://github.com/mzevin1/EECS349/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
