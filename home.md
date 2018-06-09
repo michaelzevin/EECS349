@@ -1,9 +1,11 @@
 # Predicting Stellar Evolution with Gaussian Process Regression
 Michael Zevin
+
 michaelzevin2014@u.northwestern.edu
+
 EECS 349 -- Northwestern University
 
-### Motivation
+## Motivation
 
 The evolution of stars is fundamental to many areas of astrophysics, ranging from the formation of planets to evolution of the universe as a whole. 
 Simulating the evolution of stars, in particular large populations of stars, is paramount for properly understanding a diverse range of astrophysical processes. 
@@ -11,7 +13,7 @@ However, accurately simulating stellar evolution is difficult and computationall
 Binary stars are in fact more common than isolated stars, and lead to important transient astrophysical phenomena, such as the merging of black holes, X-ray binary systems, and certain types of supernovae. 
 Simulating a dense enough grid of such systems is computationally unfeasible, and the ability to accurately interpolate stellar evolution would be a critical advancement in the study of stellar populations. 
 
-### Methods
+## Methods
 
 In this project, we use Gaussian Process Regression (GPR) to predict the evolution of various physical parameters in binary stellar evolution sequences, such as the temperature of the stars, brightness of the stars, and the rate at which one star transfers mass to another as a funtion of time. 
 To train our model, we use a grid of ~1000 simulations of a star transferring mass to a compaion black hole. 
@@ -26,7 +28,7 @@ We train a GPR model and predict the evolution of systems at points in our 4-dim
 In addition to providing interpolated evolutionary sequences, GPR also predicted the uncertainty at any point in our input space. 
 This not only allows us to predict the evolution of unsimulated systems, but also allows us to target regions of parameter space where it would be best to spend computational resources to simulate new systems, thereby improving the overall accuracy of our model. 
 
-### Results
+## Results
 
 ![Image](images/2D_evolution.png)
 *Interpolated evolution of a binary system. 
@@ -50,6 +52,6 @@ Error bars show one standard deviation across the different validation sets in 1
 
 
 
-### Final Report
+## Final Report
 [Click here for the full final report.](final_report.md)
 
