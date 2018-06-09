@@ -36,6 +36,11 @@ These regions will be targeted with future simulations and once finished will be
 This will thereby improving the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
 
 
+![Image](images/2d_test_evolution.png)
+
+
+
+<img src="images/2d_test_evolution.png" alt="hi" class="inline"/>
 
 
 ### Final Report
