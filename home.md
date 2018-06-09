@@ -28,6 +28,13 @@ This not only allows us to predict the evolution of unsimulated systems, but als
 
 ### Results
 
+![Image](images/2D_evolution.png)
+*Interpolated evolution of a binary system. 
+The top plot shows the mass transfer rate as a function of the system's age, and the bottom plot shows the (log) effective temperature as a function of system. 
+The colored line, green line, and black line show the GPR interpolation, a linear interpolation, and the true evolution of one of the sequences in our validation set. 
+The shaded lines show the evolution of various systems in our training set. 
+The color scale indicates the amount of uncertainty predicted by GPR at each point along the sequence.*
+
 To assess the quality of our interpolations, we perform 10-fold cross-validation and calculate the average mean-squared error (MSE) of our interpolations for various output parameters. 
 We find errors that are generally as low as a few percent. 
 The initial conditions of our simulations (i.e. our input feature) all drastically affect the evolution of the binary systems, and were all important for accurate interpolation. 
@@ -35,51 +42,14 @@ Our method also predicts the areas of parameter space with the highest interpola
 These regions will be targeted with future simulations and once finished will be added to our training set
 This will thereby improving the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
 
+![Image](images/MSE_error.png)
+*Mean-squared error (MSE) for various output parameters, averaged over the 10 cross-validation subsamples.
+The output parameters, from left to right, are the system age, the (log) mass transfer rate from the star to the black hole, the (log) luminosity of the star, the (log) effective temperature of the star, the orbital period of the system, and the mass of the star.
+Blue shows the GPR MSE error, whereas green shows the linear interpolation MSE error.
+Error bars show one standard deviation across the different validation sets in 10-fold cross-validation.*
 
-![Image](images/2d_test_evolution.png)
-
-
-
-<img src="images/2d_test_evolution.png" alt="hi" class="inline"/>
 
 
 ### Final Report
 [Click here for the full final report.](final_report.md)
 
-##### include interpolation image and MSE image
-
-You can use the [editor on GitHub](https://github.com/mzevin1/EECS349/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mzevin1/EECS349/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
