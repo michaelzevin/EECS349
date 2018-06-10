@@ -54,9 +54,10 @@ This plot is analagous to Figure 1 above but for interpolated systems.*
 We calculate the average mean-squared error (MSE) for various output parameters to assess the overall quality of our interpolations.
 As can be seen in Figure 4, across the board we find errors that are generally as low as a few percent. 
 The initial conditions of our simulations (i.e. our input feature) all drastically affect the evolution of the binary systems, and were all important for accurate interpolation. 
-Our method also predicts the areas of parameter space with the highest interpolation uncertainty. 
+Though linear interpolation MSE scores seems to be on par with GPR, Gaussian processes also predict the areas of parameter space with the highest interpolation uncertainty. 
 These regions will be targeted with future simulations and once finished will be added to our training set. 
 This will hopefully improving the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
+Furthermore, future experiments will adjust the kernel and kernel hyperparameters to try and increase the performance of the GPR. 
 
 ![Image](images/MSE_error.png)
 *Mean-squared error (MSE) for various output parameters, averaged over the 10 cross-validation subsamples.
