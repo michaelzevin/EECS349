@@ -40,7 +40,9 @@ In addition, we also perform a simple linear interpolation to compare with the G
 Figures 2 and 3 show example 1-parameter and 2-parameter interpolations, respectively. 
 
 ![Image](images/1D_evolution.png)
-*Figure 2. Interpolated evolution of various parameters for a binary system. 
+
+*Figure 2. 
+Interpolated evolution of various parameters for a binary system. 
 The plots, from top to bottom, show the interpolation for the system's age (since steps in the simulation are adaptive and not equally spaced in time, age is also an output parameter), the (log) mass transfer rate from the star to the black hole, the (log) of the luminosity of the star, the (log) of the effective temperature of the star, the orbital period, and the mass of the star versus resampled step.
 Black lines indicate the true evolution, blue lines the GPR, and green lines the linear interpolation.*
 
