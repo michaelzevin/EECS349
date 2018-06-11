@@ -32,17 +32,17 @@ This not only allows us to predict the evolution of unsimulated systems, but als
 
 ![Image](images/2D_evolution.png)
 *Interpolated evolution of a binary system. 
-The top plot shows the mass transfer rate as a function of the system's age, and the bottom plot shows the (log) effective temperature as a function of system. 
+The top plot shows the mass transfer rate as a function of the system's age, and the bottom plot shows the (log) effective temperature as a function of system's age. 
 The colored line, green line, and black line show the GPR interpolation, a linear interpolation, and the true evolution of one of the sequences in our validation set. 
 The shaded lines show the evolution of various systems in our training set. 
 The color scale indicates the amount of uncertainty predicted by GPR at each point along the sequence.*
 
 To assess the quality of our interpolations, we perform 10-fold cross-validation and calculate the average mean-squared error (MSE) of our interpolations for various output parameters. 
 We find errors that are generally as low as a few percent. 
-The initial conditions of our simulations (i.e. our input feature) all drastically affect the evolution of the binary systems, and were all important for accurate interpolation. 
+The initial conditions of our simulations (i.e. our input features) all drastically affect the evolution of the binary systems, and were all important for accurate interpolation. 
 Our method also predicts the areas of parameter space with the highest interpolation uncertainty. 
-These regions will be targeted with future simulations and once finished will be added to our training set
-This will thereby improving the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
+These regions will be targeted with future simulations and once finished will be added to our training set. 
+This will thereby improve the accuracy of our model, and we can continue this process iteratively to build a highly accurate and rapid means for predicting the evolution of stellar systems. 
 
 ![Image](images/MSE_error.png)
 *Mean-squared error (MSE) for various output parameters, averaged over the 10 cross-validation subsamples.
